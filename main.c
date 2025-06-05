@@ -5,6 +5,7 @@
 void predictAndPrintAll(struct keysPredict* kt, char* partialWord ) {
     char** words;
     int wordsCount;
+    int prueba;
     words = keysPredictRun(kt, partialWord, &wordsCount);
     printf("Predicts: %s = ", partialWord);
     for(int i=0; i<wordsCount; i++) {
